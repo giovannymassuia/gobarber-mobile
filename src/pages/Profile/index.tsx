@@ -3,8 +3,8 @@ import { View, Text } from 'react-native';
 
 const Profile: React.FC = () => {
   return (
-    <View>
-      <Text>Profile</Text>
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text style={{ color: '#fff' }}>Profile</Text>
     </View>
   );
 };
