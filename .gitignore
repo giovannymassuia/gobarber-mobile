@@ -28,6 +28,7 @@ build/
 .gradle
 local.properties
 *.iml
+java_pid7171.hprof.bkp
 
 # Visual Studio Code
 #
