@@ -29,7 +29,7 @@ export interface Provider {
 }
 
 const Dashboard: React.FC = () => {
-  const [providers, setProviders] = useState<Provider>([]);
+  const [providers, setProviders] = useState<Provider[]>([]);
 
   const { signOut, user } = useAuth();
   const { navigate } = useNavigation();
@@ -75,7 +75,9 @@ const Dashboard: React.FC = () => {
           <ProviderContainer
             onPress={() => navigateToCreateAppointment(provider.id)}
           >
-            <ProviderAvatar source={{ uri: provider.avatar_url }} />
+            {provider.avatar_url && (
+              <ProviderAvatar source={{ uri: provider.avatar_url }} />
+            )}
 
             <ProviderInfo>
               <ProviderName>{provider.name}</ProviderName>
