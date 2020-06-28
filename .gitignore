@@ -39,6 +39,7 @@ java_pid7171.hprof.bkp
 node_modules/
 npm-debug.log
 yarn-error.log
+coverage/
 
 # BUCK
 buck-out/
